@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az első webalkalmazásom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="slideshow-container">
+
+      <div id="leiras">
+      </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/hegy.jpg" id="kep">
+          <h1 id="photo-title">My title</h1>
+          <p id="photo-description">What happened here, why is this a very nice image</p>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/hegy2.jpg" id="kep">
+          <h1 id="photo-title">Nagyon szép kép</h1>
+          <p id="photo-description">Ez egy fantasztikus kép</p>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/hegy3.jpg" id="kep">
+          <h1 id="photo-title">Nagyon-nagyon szép kép</h1>
+          <p id="photo-description">Ez a legszebb kép</p>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/hegy4.jpg" id="kep">
+            <h1 id="photo-title">Csodálatos kép</h1>
+            <p id="photo-description">Másszinű hegy</p>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/hegy5.jpg" id="kep">
+            <h1 id="photo-title">Kiváló kép</h1>
+            <p id="photo-description">Havas hegy</p>
+          </div>
+      
+        <div class="grey"></div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <div class="grey2"></div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+
+    <div id="kozep">
+      <div id="kepek1">
+        <img src="images/hegy.jpg" onclick="currentSlide(1)" id="kep1"> 
+        <div class="title">Something hidden</div>
+      </div>
+
+      <div id="kepek2">
+        <img src="images/hegy2.jpg" onclick="currentSlide(2)" id="kep1"> 
+        <div class="title2">Something hidden</div>
+      </div>
+
+      <div id="kepek3">
+        <img src="images/hegy3.jpg" onclick="currentSlide(3)" id="kep1"> 
+        <div class="title3">Something hidden</div>
+      </div>
+
+      <div id="kepek4">
+        <img src="images/hegy4.jpg" onclick="currentSlide(4)" id="kep1"> 
+        <div class="title4">Something hidden</div>
+      </div>
+
+      <div id="kepek5">
+        <img src="images/hegy5.jpg" onclick="currentSlide(5)" id="kep1"> 
+        <div class="title5">Something hidden</div>
+      </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
+</html>

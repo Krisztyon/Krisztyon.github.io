@@ -1,0 +1,238 @@
+body {
+    background-image: linear-gradient(to left, gray, white, rgba(128, 128, 128, 0.555));
+    margin-top: 200px;
+    max-width: 2000px;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {box-sizing:border-box}
+
+#kep {
+    width: 750px;
+    height: 250px;
+    margin-left: 125px;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -245px;
+  padding: 16px;
+  padding-left: -500px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 125px;
+  border-radius: 3px 0 0 3px;
+  color: rgb(61, 61, 61)
+}
+
+.prev {
+    left: 125px;
+    border-radius: 3px 0 0 3px;
+    color: rgb(61, 61, 61)
+}
+
+.grey {
+    position: relative;
+    width: 60px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 255px;
+    right: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2.5px 2px black;
+}
+
+.grey2 {
+    position: relative;
+    width: 60px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 505px;
+    left: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2.5px 2px black;
+}
+
+
+.prev:hover, .next:hover {
+  color: rgba(128, 128, 128, 0.521);
+}
+
+#photo-title {
+  color: #f2f2f2;
+  position: absolute;
+  left: 200px;
+  bottom: 550px;
+  width: 100%;
+}
+
+#photo-description {
+    color: #f2f2f2;
+    position: absolute;
+    left: 200px;
+    bottom: 525px;
+  }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#kep1 {
+  position: relative;
+  cursor: pointer;
+  height: 75px;
+  width: 100px;
+  background-color: #bbb;
+  top: -400px;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 2px black;
+}
+
+.title {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -50px;
+}
+
+.title2 {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 4.75px;
+    left: 10px;
+    top: -50px;
+}
+
+.title3 {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 4.75px;
+    left: 10px;
+    top: -50px;
+}
+
+.title4 {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 4.75px;
+    left: 10px;
+    top: -50px;
+}
+
+.title5 {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 4.75px;
+    left: 10px;
+    top: -50px;
+}
+  
+#kepek1:hover .title {
+    position: relative;
+    display:inline;
+    top: -500px;
+    margin-left: -131px;
+    margin-right: 0px;
+    left: 15px;
+    padding-right: 5px;
+}
+
+#kepek2:hover .title2 {
+    position: relative;
+    display:inline-block;
+    top: -500px;
+    margin-left: -130px;
+    margin-right: 0px;
+}
+
+#kepek3:hover .title3 {
+    position: relative;
+    display:inline-block;
+    top: -500px;
+    margin-left: -130px;
+    margin-right: 0px;
+}
+
+#kepek4:hover .title4 {
+    position: relative;
+    display:inline-block;
+    top: -500px;
+    margin-left: -130px;
+    margin-right: 0px;
+}
+
+#kepek5:hover .title5 {
+    position: reslative;
+    display:inline-block;
+    top: -500px;
+    margin-left: -130px;
+    margin-right: 0px;
+}
+
+#kepek1, #kepek2, #kepek3, #kepek4, #kepek5 {
+    display: inline;
+    margin-left: 5px;
+    left: 0px;
+    right: 0px;
+    max-width: 500px;
+}
+
+#kozep {
+    max-width: 1000px;
+    left: 0px;
+    right: 0px;
+    margin-left: 577.5px;
+    margin-top: -100px;
+}
+
+#leiras {
+    position: relative;
+    margin-left: 180px;
+    bottom: -250px;
+    padding-top: 90px;
+    padding-right: 100px;
+    width: 650px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.678);
+}
