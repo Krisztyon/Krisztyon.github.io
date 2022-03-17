@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+.main {
+    height: 100%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+
+#termekvonal {
+    position: relative;
+    display:block;
+    top: 675px;
+    font-size: 50px;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+}
+
+#termekAjanlo {
+    position: relative;
+    display:block;
+    top: 135px;
+    font-size: 50px;
+    margin-top: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1550px;
+    width: 100%;
+    height: 1050px;
+}
+
+#termekListaBox {
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    top: 650px;
+    margin-top: 50px;
+    margin-left: 100px auto;
+    margin-right: 100px auto;
+    color: rgb(0, 0, 0);
+}
+
+#termekListaBox #termek {
+    display: flex;
+    width: 350px;
+    height: 425px; 
+    background-color: rgba(255, 255, 255, 0.616);
+    border:1px solid gray;
+}
+
+#termekListaKepek {
+    display: inline;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 0px;
+    top: 10px;
+    margin-right:0px;
+}
+
+#termekNevek {
+    position: relative;
+    font-size: 25px;
+    top: -10px;
+    text-decoration: underline;
+}
+
+#termekArak {
+    margin-top: -20px;
+    font-size: 27.5px;
+    font-family: montserrat;
+    color: #c72127;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+#termekLeirasa {
+    position: relative;
+    margin-right: 10px;
+    font-size: 15px;
+    top: -20px;
+    display: inline;
+    color:rgb(0, 0, 0);
+}
+
+#termekBuy {
+    display: inline;
+    position: absolute;
+    top: 0px;
+    margin-top: 390px;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+#termekBuy:hover {
+    color: red
+}
+
+#fejlec {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 75px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white
+}
+
+#termekMegtekintese {
+    position: absolute;
+    display: inline;
+    top: 375px;
+    left: 210px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+#termekMegtekintese a {
+    text-decoration: none;
+}
+
+#termekMegtekintese:hover, #termekMegtekintese a:hover {
+    background-color: red;
+    color: black
+}
+
+#termekBemutato {
+    width: 1000px;
+    height: 500px;
+    position:relative;
+    display: block;
+    font-size: 110px;
+    top: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    left: 4%;
+    right: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(228, 224, 224);
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#vonal {
+    position: relative;
+    display: block;
+    top: 65px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#angle-down {
+    width: 10px;
+    height: 10px;
+    position:relative;
+    display: block;
+    font-size: 60px;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -500px;
+    right: 25px;
+    top: -340px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#angle-down:hover {
+    color: red
+}
+
+#bemutatoReszleg {
+    position: relative;
+    display:block;
+    top: -500px;
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1550px;
+    width: 100%;
+    height: 1050px;
+    border-bottom: 5px solid black;
+}
+
+
+#foLogo2 {
+    position:fixed;
+    display:inline;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 1850px;
+    left: 0px;
+    top: -12.5px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#foLogoMellettiCegNev {
+    position: absolute;
+    display: inline;
+    left: 50px;
+    top: -15px;
+    font-size: 30px;
+    color: beige;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#cegNameAndDescription {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 7.5px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#CegNevAlattiLeiras {
+    position: absolute;
+    font-size: 20px;
+    left: 55px;
+    top: 15px;
+    color:azure
+}
+
+#informationGYIK {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+}
+
+#informationGYIK1 {
+    font-size: 20px;
+}
+
+.informationGYIKSettings {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    right: 575px;
+    top: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#informationLogo {
+    position: absolute;
+    left: 45px;
+    top: -15px;
+}
+
+.informationGYIKSettings:hover, .userSettings:hover {
+    color: red
+}
+
+.userSettings {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    right: 425px;
+    top: 12.5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#informationLogo1 {
+    position: absolute;
+    left: 30px;
+    top: -15px;
+}
+
+/*#buyResz {
+    position: relative;
+    right: 175px;
+    top: -35px;
+    background-color: red;
+}*/
+
+.kosarSettings {
+    width: 50px;
+    height: 0px;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    right: 330px;
+    top: -11px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.kosarSettings:hover {
+    color: green
+}
+
+#logorreg {
+    position: relative;
+    left: 0px;
+    width: 110px;
+    height: 100px;
+    margin-left: auto;
+    top: -1223.5px;
+}
+
+
+#login {
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    right: 120px;
+}
+
+.loginregister {
+    position: relative;
+    width: 0px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    top: 5px;
+}
+
+/*.loginregister:hover{
+    position: relative;
+    font-size: 24px;
+    color: red
+}*/
+
+#loginicon {
+    position: relative;
+    right: -27.5px;
+    top: 1px;
+}
+
+#searchAlap {
+    width: 30%;
+    height: 40px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    margin-left: -15%;
+    border-radius: 10px;
+    top: 12.5px;
+    font-size: 20px;
+}
+
+input {
+    width: 75%;
+    height: 25px;
+    margin-top: 5px;
+    text-indent: 5px;
+    font-size: 12.6pt;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+}
+input[type=text]:hover{
+    box-shadow: 0 0 5pt 0.5pt #000000;
+}
+input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #000000;
+    outline-width: 0px;
+}
+
+#searchiconkeret {
+    position: fixed;
+    left: 62.5%;
+    right: 50%;
+    width: 2.5%;
+    height: 41px;
+    top: 17px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+#searchicon {
+    position: fixed;
+    left: 63.25%;
+    right: 50%;
+    top: 25px;
+}
+
+#searchLenyiloFule {
+    position: fixed;
+    width: 29.8%;
+    height: 50%;
+    left: 35%;
+    right: 50%;
+    top: 57.5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.548);
+    visibility: hidden;
+    border: 5px black solid;
+}
+
+#searchexit {
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    top: -1%;
+    left: 3%;
+    width: 20%;
+    height: 7.5%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#searchBackLogo {
+    position: relative;
+    right: 10%;   
+}
+
+#searchexit:hover, #loginexit:hover {
+    color: red
+}
+
+#searchtalalat {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    text-decoration:underline;
+}
+
+#loginFelugroMenu {
+    position: fixed;
+    width: 20%;
+    height: 50%;
+    left: 40%;
+    right: 50%;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 5px black solid;
+    visibility: hidden;
+}
+
+#loginszoveg {
+    position: fixed;
+    color: white;
+    box-sizing:content-box;
+    top: 19%;
+    left: 41%;
+    right: 50%;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#loginFelhasznalonev, #loginFelhasznaloJelszo {
+    width: 80%;
+    height: 5%;
+    position: relative;
+    top: 12.5%;
+    left: 10%;
+    font-size: 20px;
+}
+
+#LoginFelhasznalonevSzoveg, #LoginFelhasznaloJelszoSzoveg {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    width: 75%;
+    height: 5%;
+    top: 15%;
+    left: 5%;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#loginbutton {
+    position: relative;
+    top: 25%;
+    left: 10%;
+    height: 7.5%;
+    font-size: 27.5px;
+    border-radius: 100px;
+}
+
+#registerbutton {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    height: 7.5%;
+    font-size: 27.5px;
+    border-radius: 100px;
+}
+
+#registervonal {
+    position: relative;
+    top: 2.5%
+}
+
+#registervonal2 {
+    position: relative;
+    top: 12.5%
+}
+
+#loginbutton:hover, #registerbutton:hover {
+    cursor: pointer;
+}
+
+#loginexit {
+    position: absolute;
+    color: white;
+    top: -11.5%;
+    left: 1%;
+    cursor: pointer;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#loginexitlogo {
+    position: relative;
+    left: -5%;
+}
+
+#fejlecadatok {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.548);
+    margin-top: 30%
+}

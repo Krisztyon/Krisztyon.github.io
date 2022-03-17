@@ -1,238 +1,401 @@
-body {
-    background-image: linear-gradient(to left, gray, white, rgba(128, 128, 128, 0.555));
-    margin-top: 200px;
-    max-width: 2000px;
-}
-
-
 * {
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
 }
 
-* {box-sizing:border-box}
-
-#kep {
-    width: 750px;
-    height: 250px;
-    margin-left: 125px;
-    margin-right: auto;
-    box-shadow: 0px 0px 10px 2px black;
+html, body {
+    overflow-x: hidden;
+    height: 100%;
 }
 
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+body {
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(139, 139, 139, 0); 
+    /*background-image: url(/picture/background.png);
+    background-repeat: no-repeat;*/
+}
+.main {
+    height: 100%;
+    margin-top: 60px;
+    padding: 10px 50px;
 }
 
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -245px;
-  padding: 16px;
-  padding-left: -500px;
-  color: white;
-  font-weight: bold;
-  font-size: 35px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 125px;
-  border-radius: 3px 0 0 3px;
-  color: rgb(61, 61, 61)
-}
-
-.prev {
-    left: 125px;
-    border-radius: 3px 0 0 3px;
-    color: rgb(61, 61, 61)
-}
-
-.grey {
-    position: relative;
-    width: 60px;
-    height: 250px;
+#informationBox {
+    position:relative;
+    display:block;
     margin-left: auto;
     margin-right: auto;
-    bottom: 255px;
-    right: 350px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 2.5px 2px black;
+    margin-top: 10px;
+    visibility: hidden;
+    border-radius: 20px;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.616);
 }
 
-.grey2 {
-    position: relative;
-    width: 60px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 505px;
-    left: 350px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 2.5px 2px black;
-}
-
-
-.prev:hover, .next:hover {
-  color: rgba(128, 128, 128, 0.521);
-}
-
-#photo-title {
-  color: #f2f2f2;
-  position: absolute;
-  left: 200px;
-  bottom: 550px;
-  width: 100%;
-}
-
-#photo-description {
-    color: #f2f2f2;
-    position: absolute;
-    left: 200px;
-    bottom: 525px;
-  }
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-#kep1 {
-  position: relative;
-  cursor: pointer;
-  height: 75px;
-  width: 100px;
-  background-color: #bbb;
-  top: -400px;
-  display: inline-block;
-  box-shadow: 0px 0px 10px 2px black;
-}
-
-.title {
-    display: none;
-    position: relative;
-    background: grey;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    top: -50px;
-}
-
-.title2 {
-    display: none;
-    position: relative;
-    background: grey;
-    color: white;
-    border-radius: 5px;
-    padding: 4.75px;
-    left: 10px;
-    top: -50px;
-}
-
-.title3 {
-    display: none;
-    position: relative;
-    background: grey;
-    color: white;
-    border-radius: 5px;
-    padding: 4.75px;
-    left: 10px;
-    top: -50px;
-}
-
-.title4 {
-    display: none;
-    position: relative;
-    background: grey;
-    color: white;
-    border-radius: 5px;
-    padding: 4.75px;
-    left: 10px;
-    top: -50px;
-}
-
-.title5 {
-    display: none;
-    position: relative;
-    background: grey;
-    color: white;
-    border-radius: 5px;
-    padding: 4.75px;
-    left: 10px;
-    top: -50px;
-}
-  
-#kepek1:hover .title {
-    position: relative;
-    display:inline;
-    top: -500px;
-    margin-left: -131px;
-    margin-right: 0px;
-    left: 15px;
-    padding-right: 5px;
-}
-
-#kepek2:hover .title2 {
-    position: relative;
-    display:inline-block;
-    top: -500px;
-    margin-left: -130px;
-    margin-right: 0px;
-}
-
-#kepek3:hover .title3 {
-    position: relative;
-    display:inline-block;
-    top: -500px;
-    margin-left: -130px;
-    margin-right: 0px;
-}
-
-#kepek4:hover .title4 {
-    position: relative;
-    display:inline-block;
-    top: -500px;
-    margin-left: -130px;
-    margin-right: 0px;
-}
-
-#kepek5:hover .title5 {
-    position: reslative;
-    display:inline-block;
-    top: -500px;
-    margin-left: -130px;
-    margin-right: 0px;
-}
-
-#kepek1, #kepek2, #kepek3, #kepek4, #kepek5 {
+#InformationWarning {
     display: inline;
-    margin-left: 5px;
-    left: 0px;
-    right: 0px;
-    max-width: 500px;
+    position: absolute;
+    width: 50px;
+    padding: 5px 10px;
+    font-size: 27.5px;
+    color: rgb(255, 0, 0);
+    border-right: 5px rgb(255, 255, 255) solid;
 }
 
-#kozep {
-    max-width: 1000px;
-    left: 0px;
-    right: 0px;
-    margin-left: 577.5px;
-    margin-top: -100px;
+#InformationBoxSzoveg {
+    display: inline;
+    position: absolute;
+    font-size: 22.5px;
+    margin-top: -22.5px;
+    margin-left: 50px;
+    margin-right: -500px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#leiras {
+#ageblock {
+    position:fixed;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 400px;
+    left: 0;
+    right: 50px;
+    top: 250px;
+    bottom: 0;
+    width: 750px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    text-decoration:underline;
+}
+
+#ageBlockFejlec {
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    margin-top: 10px;
+    border-bottom: 5px solid red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#ageBlockFejlecAlatt {
+    color: white;
+    font-size: 40px;
+    margin-top: -25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*#ageBlockYes {
+    font-size: 25px;
+    margin-top: -50px;
+    margin-right: 75px;
+    border-radius: 25px;
+}
+    #ageBlockYes:hover, #ageBlockNo:hover {
+        background-color: red;
+    }
+
+#ageBlockNo {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-right: 0px;
+    border-radius: 25px;
+}
+    #fiatalsag {
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+        margin-top: 50px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        text-decoration: underline;
+    }*/
+
+#cegnev {
+    position:fixed;
+    display:block;
+    color: white;
+    font-size: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 50px;
+    top: 400px;
+    bottom: 0;
+    text-align: center;
+    font-family:fantasy;
+    text-decoration:underline;
+}
+
+.nav, .secondnav {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 95px;
+    width: 155px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.37);
+    transform: translateX(-250px);
+    transition: transform 500ms ease-in-out;
+    border-right: 2px black solid;
+}
+
+.loginregister {
     position: relative;
-    margin-left: 180px;
-    bottom: -250px;
-    padding-top: 90px;
-    padding-right: 100px;
-    width: 650px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.678);
+    top: 75px;
+}
+
+#menuPontSzoveg, #menuPontSzoveg2 {
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    margin-top: 7.5px;
+}
+
+#menuPontSzoveg2 {
+    position: absolute;
+    margin-left: 750px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 25px;
+    position: absolute;
+}
+
+ul li #items {
+    float: left;
+    margin-left: -22px;
+    box-shadow: 3px 5px 15px rgb(0, 0, 0);
+}
+
+ul li {
+    float: left;
+    margin-top: 20px;
+}
+
+ul li a {
+    width: 150px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.nav a:hover {
+    background-color: #ff0000;
+}
+
+ul li ul{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+#nemnagyon {
+    margin-left: 50px;
+}
+
+ul li ul, ul li ul li ul li, #second{
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+    left: 129px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+ul li ul li:hover ul li {
+    display: block;
+    left: 100px;
+}
+
+li #nem {
+    top: 0px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#items1, #items2 {
+    margin-top: 0px;
+}
+
+#check:checked ~ .nav {
+    transform: translateX(-5px);
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+label #btn, label #cancel {
+    left: 350px;
+    top: 15px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding: 6px 11px;
+}
+
+label #btn {
+    padding: 6px 5px;
+}
+
+label #btn:hover {
+    color: red;
+}
+
+label #cancel {
+    visibility: hidden;
+}
+
+label #cancel:hover {
+    color: red
+}
+
+#arrowdown {
+    height: 3px;
+    display: inline;
+    position: absolute;
+    top: 0px;
+    margin-top: 100px;
+    left: 115px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+#arrowdown2{
+    height: 3px;
+    display: inline;
+    position: absolute;
+    top: 15px;
+    margin-top: auto;
+    left: 135px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+#arrowdown3 {
+    height: 3px;
+    display: inline;
+    position: absolute;
+    top: 60px;
+    margin-top: auto;
+    left: 135px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+#jelenlegiPosition {
+    width: 100%;
+    display: inline;
+    position: absolute;
+    font-size: 17.5px;
+    margin-left: 0px;
+    margin-top: 75px;
+    padding-left: 60px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+#jelenlegiPositionItem:hover {
+    color: red;
+}
+
+#jelenlegiPositionItem {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#kacsacsor {
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 6px rgb(255, 255, 255);
+}
+
+#elvalasztoVonal1 {
+    position: relative;
+    width: 155px;
+    top: 35px;
+    margin-left: -25px;
+    color: black;
+}
+
+#logos {
+    position: relative;
+    display: flexbox;
+    margin-top: 55px;
+    margin-right: 17px;
+    justify-content: space-around;
+}
+
+.elerhetosegek {
+    border-bottom: 2px solid black;
+}
+
+#foLogo {
+    position:fixed;
+    display:inline;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0px;
+    left: 0px;
+    top: -10px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+#logorreg {
+    position: relative;
+    left: 0px;
+    width: 110px;
+    height: 75px;
+    border-radius: 10px
+}
+
+.loginregister {
+    position: relative;
+    width: 750px;
+    font-size: 22.5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    top: 10px;
+}
+
+#login {
+    position: relative;
+    margin-left: 50px;
+    left: 12.5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.loginregister:hover {
+    /*position: absolute;
+    font-size: 24px;*/
+    color: red
+}
+
+#loginicon {
+    position: relative;
+    right: 20px;
 }
