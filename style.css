@@ -1,401 +1,221 @@
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    overflow-x: hidden;
-    height: 100%;
-}
-
 body {
-    font-family: arial, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(139, 139, 139, 0); 
-    /*background-image: url(/picture/background.png);
-    background-repeat: no-repeat;*/
-}
-.main {
-    height: 100%;
-    margin-top: 60px;
-    padding: 10px 50px;
+    background-image: url(/kepek/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
 }
 
-#informationBox {
-    position:relative;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    visibility: hidden;
-    border-radius: 20px;
-    width: 500px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.616);
-}
-
-#InformationWarning {
-    display: inline;
-    position: absolute;
-    width: 50px;
-    padding: 5px 10px;
-    font-size: 27.5px;
-    color: rgb(255, 0, 0);
-    border-right: 5px rgb(255, 255, 255) solid;
-}
-
-#InformationBoxSzoveg {
-    display: inline;
-    position: absolute;
-    font-size: 22.5px;
-    margin-top: -22.5px;
-    margin-left: 50px;
-    margin-right: -500px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#ageblock {
-    position:fixed;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    top: 400px;
-    left: 0;
-    right: 50px;
-    top: 250px;
-    bottom: 0;
-    width: 750px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.795);
-    text-align: center;
-    text-decoration:underline;
-}
-
-#ageBlockFejlec {
-    color: rgb(255, 0, 0);
-    font-size: 50px;
-    margin-top: 10px;
-    border-bottom: 5px solid red;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#ageBlockFejlecAlatt {
-    color: white;
-    font-size: 40px;
-    margin-top: -25px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/*#ageBlockYes {
-    font-size: 25px;
-    margin-top: -50px;
-    margin-right: 75px;
-    border-radius: 25px;
-}
-    #ageBlockYes:hover, #ageBlockNo:hover {
-        background-color: red;
-    }
-
-#ageBlockNo {
-    font-size: 25px;
+#Tojashely1, #Tojashely2, #Tojashely3, #Tojashely4, #Tojashely5, #Tojashely6, #Tojashely7, #Tojashely8, #Tojashely9, #Tojashely10, #Tojashely11, #Tojashely12, #Tojashely13, #Tojashely14, #Tojashely15, #Tojashely16, #Tojashely17, #Tojashely18 {
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
-    margin-right: 0px;
-    border-radius: 25px;
-}
-    #fiatalsag {
-        color: rgb(255, 0, 0);
-        font-size: 30px;
-        margin-top: 50px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        text-decoration: underline;
-    }*/
-
-#cegnev {
-    position:fixed;
-    display:block;
-    color: white;
-    font-size: 75px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    left: 0;
-    right: 50px;
-    top: 400px;
-    bottom: 0;
-    text-align: center;
-    font-family:fantasy;
-    text-decoration:underline;
+    background-color: rgba(0, 0, 0, 0.555);
 }
 
-.nav, .secondnav {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    position: fixed;
-    left: 0px;
-    top: 95px;
-    width: 155px;
-    height: 420px;
-    background-color: rgba(0, 0, 0, 0.37);
-    transform: translateX(-250px);
-    transition: transform 500ms ease-in-out;
-    border-right: 2px black solid;
-}
-
-.loginregister {
-    position: relative;
-    top: 75px;
-}
-
-#menuPontSzoveg, #menuPontSzoveg2 {
-    position: relative;
-    color: rgb(0, 0, 0);
-    margin-left: 50px;
-    margin-top: 7.5px;
-}
-
-#menuPontSzoveg2 {
-    position: absolute;
-    margin-left: 750px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 50px;
-    margin-left: 25px;
-    position: absolute;
-}
-
-ul li #items {
-    float: left;
-    margin-left: -22px;
-    box-shadow: 3px 5px 15px rgb(0, 0, 0);
-}
-
-ul li {
-    float: left;
-    margin-top: 20px;
-}
-
-ul li a {
-    width: 150px;
-    color: white;
-    display: block;
+#BoxSzoveg {
     text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: Century Gothic;
-    font-weight: bold;
-    text-shadow: 3px 3px 6px rgb(0, 0, 0);
-}
-
-.nav a:hover {
-    background-color: #ff0000;
-}
-
-ul li ul{
-    background-color: rgba(0, 0, 0, 0.616);
-}
-
-#nemnagyon {
-    margin-left: 50px;
-}
-
-ul li ul, ul li ul li ul li, #second{
-    display: none;
-}
-
-ul li:hover ul {
-    display: block;
-    left: 129px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 10px;
-}
-
-ul li ul li:hover ul li {
-    display: block;
-    left: 100px;
-}
-
-li #nem {
-    top: 0px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-#items1, #items2 {
-    margin-top: 0px;
-}
-
-#check:checked ~ .nav {
-    transform: translateX(-5px);
-}
-
-#check {
-    display: none;
-}
-
-label #btn, label #cancel {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 3px;
-    text-shadow: 3px 3px 6px rgb(0, 0, 0);
-}
-
-label #btn, label #cancel {
-    left: 350px;
-    top: 15px;
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    padding: 6px 11px;
-}
-
-label #btn {
-    padding: 6px 5px;
-}
-
-label #btn:hover {
-    color: red;
-}
-
-label #cancel {
-    visibility: hidden;
-}
-
-label #cancel:hover {
-    color: red
-}
-
-#arrowdown {
-    height: 3px;
-    display: inline;
-    position: absolute;
-    top: 0px;
-    margin-top: 100px;
-    left: 115px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s;
-}
-
-#arrowdown2{
-    height: 3px;
-    display: inline;
-    position: absolute;
-    top: 15px;
-    margin-top: auto;
-    left: 135px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s;
-}
-
-#arrowdown3 {
-    height: 3px;
-    display: inline;
-    position: absolute;
-    top: 60px;
-    margin-top: auto;
-    left: 135px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s;
-}
-
-#jelenlegiPosition {
-    width: 100%;
-    display: inline;
-    position: absolute;
-    font-size: 17.5px;
-    margin-left: 0px;
-    margin-top: 75px;
-    padding-left: 60px;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.137);
-}
-
-#jelenlegiPositionItem:hover {
-    color: red;
-}
-
-#jelenlegiPositionItem {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 6px rgb(0, 0, 0);
-}
-
-#kacsacsor {
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 6px rgb(255, 255, 255);
-}
-
-#elvalasztoVonal1 {
-    position: relative;
-    width: 155px;
-    top: 35px;
-    margin-left: -25px;
-    color: black;
-}
-
-#logos {
-    position: relative;
-    display: flexbox;
-    margin-top: 55px;
-    margin-right: 17px;
-    justify-content: space-around;
-}
-
-.elerhetosegek {
-    border-bottom: 2px solid black;
-}
-
-#foLogo {
-    position:fixed;
-    display:inline;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    right: 0px;
-    left: 0px;
-    top: -10px;
-    text-shadow: 3px 3px 6px rgb(0, 0, 0);
-}
-
-#logorreg {
-    position: relative;
-    left: 0px;
-    width: 110px;
-    height: 75px;
-    border-radius: 10px
-}
-
-.loginregister {
-    position: relative;
-    width: 750px;
     font-size: 22.5px;
-    text-decoration: none;
-    color: white;
-    margin-left: 50px;
-    top: 10px;
-}
-
-#login {
-    position: relative;
-    margin-left: 50px;
-    left: 12.5px;
-    font-family: 'Oswald', sans-serif;
+    margin-left: -40px;
+    text-align: center;
+    padding-top: 85%;
     font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
-.loginregister:hover {
-    /*position: absolute;
-    font-size: 24px;*/
-    color: red
-}
-
-#loginicon {
+#helyszinekLosSantos, #helyszinekSanFierro, #helyszinekVidek, #helyszinekOsszes {
     position: relative;
-    right: 20px;
+    width: 500px;
+    margin-left: 250px;
+    height: 15%;
+    left: 50%;
+    font-size: 60px;
+    text-align: center;
+}
+
+#helyszinbuttonok {
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    padding-right: 2000px;
+    margin-bottom: -100px;
+    color: rgb(255, 255, 255);
+}
+
+#helyszinekLosSantos:hover, #helyszinekSanFierro:hover, #helyszinekVidek:hover, #helyszinekOsszes:hover{
+    color: red;
+}
+
+#radarkep {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 650px;
+    height: 650px;
+}
+
+#LStojas1 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 527.5px;
+    left: 198px
+}
+
+#LStojas2 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 470px;
+    left: 115px
+}
+#LStojas3 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 470px;
+    left: 100px
+}
+#LStojas4 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 450px;
+    left: 224px
+}
+#LStojas5 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 423px;
+    left: 104px
+}
+#LStojas6 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 440px;
+    left: 88.5px
+}
+#LStojas7 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 445px;
+    left: 180px
+}
+
+#LStojas8 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 521px;
+    left: 155px
+}
+#LStojas9 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 519px;
+    left: 127.5px
+}
+#LStojas10 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 496px;
+    left: 296.5px
+}
+#LStojas11 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 520px;
+    left: 182.5px
+}
+#LStojas12 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 555px;
+    left: 261px
+}
+#LStojas13 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 355px;
+    left: 0px
+}
+#LStojas14 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 590px;
+    left: -242.5px
+}
+#LStojas15 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 309px;
+    left: -217px
+}
+#LStojas16 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 285px;
+    left: -232.5px
+}
+#LStojas17 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 225px;
+    left: -167.5px
+}
+#LStojas18 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 320px;
+    left: -191px
+}
+#LStojas19 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 315px;
+    left: -205px
+}
+#LStojas20 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 282.5px;
+    left: -191px
+}
+#LStojas21 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 355px;
+    left: -305px
+}
+#LStojas22 {
+    position: absolute;
+    width: 15px;
+    margin-left: 50%;
+    top: 285px;
+    left: -300px
+}
+#TojasHelyLeirasa {
+    position: relative;
+    width: 115px;
+    height: 125px;
+    margin-top: -10.25%;
+
+    background-color: red;
+    visibility: hidden;
 }

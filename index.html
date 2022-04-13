@@ -1,81 +1,118 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Próba</title>
+    <title>Krisztyon oldala - Húsvét</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
-
-    <!--<div id="fejlec">
-        <div id="cegnev">
-            <h>Krisztyon rezidencia</h1>
-        </div>
-             <div id="age">
-            <div id="ageblock">
-                <h1 id="ageBlockFejlec">Életkor ellenörzés</h1>
-                    <h2 id="ageBlockFejlecAlatt">Elmúltál 18 éves?</h2>
-                <button id="ageBlockYes">Igen, 18 éven felüli vagyok!</button>
-                <button id="ageBlockNo">Nem, 18 éven aluli vagyok!</button>
-                    <h2 id="fiatalsag"></h2>
-            </div>
-        </div> 
-    </div>
 <body>
--->
+    <div id="TojasHelyek">
+        <!--<div id="helyszinbuttonok">
+            <p id="helyszinekLosSantos">Los Santos</p>
+            <p id="helyszinekSanFierro">San Fierro</p>
+            <p id="helyszinekVidek">Vidék</p>
+            <p id="helyszinekOsszes">Összes megnézése</p>
+        </div>-->
+        <!--<div id="TojasHelyHatter">-->
 
+        <div id="radarPontPontosHely">
+            <div>
+                <img src="/kepek/radar.jpg" id="radarkep" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas1" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas2" alt="" srcset="">
+                <!--<div id="TojasHelyLeirasa">asd</div>-->
+                <img src="/kepek/414.png" id="LStojas3" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas4" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas5" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas6" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas7" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas8" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas9" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas10" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas11" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas12" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas13" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas14" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas15" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas16" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas17" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas18" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas19" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas20" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas21" alt="" srcset="">
+                <img src="/kepek/414.png" id="LStojas22" alt="" srcset="">
+            </div>
+            <ul id="LosSantos">
+            </ul>
+        </div>
 
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-times" id="cancel"><span style="font-family: 'Fjalla One', sans-serif; font-size: 30px; margin-left: 5px">Bezárás</span></i>
-        <i class="fas fa-bars" id="btn"><span style="font-family: 'Fjalla One', sans-serif; font-size: 30px; margin-left: 5px">Kategóriák</span></i>
-    </label>
-
-    <div class="nav">
-        <ul>  
-            <img src="/picture/almalogo2.png" id="foLogo" alt="" style="width: 50px; height: 50px;">
-            <li id="tags"><a href="/index.html" id="items">Főoldal</a></li>
-            <li id="tags"><a href="#" id="items">Termékeink</a>
-                <i class="fa-solid fa-caret-right" id="arrowdown"></i>
-                <ul>
-                    <li id="items1"><a href="/termekek/Gyerekek.html">Gyerekek</a>
-                    <i class="fa-solid fa-caret-right" id="arrowdown2"></i>
-                        <ul id="nem">
-                            <li id="items2"><a href="#">Gyerekek1</a>
-                            <li id="items2"><a href="#">Gyerekek1</a>
-                            <li id="items2"><a href="#">Gyerekek1</a>
-                            <li id="items2"><a href="#">Gyerekek1</a>
-                        </ul>
-                        </li>
-                    <li id="items1"><a href="/termekek/Felnottek.html">Felnöttek</a>
-                    <i class="fa-solid fa-caret-right" id="arrowdown3"></i>
-                        <ul id="nem">
-                            <li id="items2"><a href="#">Felnöttek1</a>
-                            <li id="items2"><a href="#">Felnöttek1</a>
-                            <li id="items2"><a href="#">Felnöttek1</a>
-                            <li id="items2"><a href="#">Felnöttek1</a>
-                        </ul>
-                        </li>
-                </ul>
-                </li>
-            <li><a href="#" id="items">Rólunk</a></li>
-            <li><a href="#" id="items">Elérhetőségek</a></li>
-<hr id="elvalasztoVonal1">
-<hr id="elvalasztoVonal1">
-            <i class="fa-brands fa-facebook-f" style="color: blue; font-size: 25px; margin-bottom: 500px;" id="logos"></i>
-            <i class="fa-solid fa-phone-flip" style="color: blue; font-size: 25px;" id="logos"></i>
-            <i class="fa-solid fa-at" style="color: blue; font-size: 25px;" id="logos"></i>
+        <!--<ul id="LosSantos">
+            <ul id="Tojashely1">
+                <h1 id="BoxSzoveg">Déli Benzinkút</h1>
+            </ul>
+            <ul id="Tojashely2">   
+                <h1 id="BoxSzoveg">Északi Benzinkút</h1>
+            </ul>
+            <ul id="Tojashely3">    
+                <h1 id="BoxSzoveg">Korház</h1>
+            </ul>
+            <ul id="Tojashely4">    
+                <h1 id="BoxSzoveg">Autókereskedés</h1>
+            </ul>
         </ul>
-    </div>
-    <div id="logorreg">
-        <a href="#" id="login" class="loginregister"><i class="fa-solid fa-right-to-bracket" id="loginicon"></i>Belépés</a></li>
+        <ul id="LosSantos2">
+            <ul id="Tojashely5">    
+                <h1 id="BoxSzoveg">Boxter Mechanic Shop</h1>
+            </ul>
+            <ul id="Tojashely6">    
+                <h1 id="BoxSzoveg">Pláza</h1>
+            </ul>
+            <ul id="Tojashely7">    
+                <h1 id="BoxSzoveg">Városháza</h1>
+            </ul>
+            <ul id="Tojashely8">    
+                <h1 id="BoxSzoveg">Templom</h1>
+            </ul>
+        </ul>
+        <ul id="LosSantos3">
+            <ul id="Tojashely9">    
+                <h1 id="BoxSzoveg">LS Gyár</h1>
+            </ul>
+            <ul id="Tojashely10">    
+                <h1 id="BoxSzoveg">LS Tuning</h1>
+            </ul>
+            <ul id="Tojashely11">    
+                <h1 id="BoxSzoveg">Utánfutó bérlő</h1>
+            </ul>
+            <ul id="Tojashely12">    
+                <h1 id="BoxSzoveg">Fánkozó</h1>
+            </ul>
+        </ul>
+        <ul id="SanFierro">
+            <ul id="Tojashely13">    
+                <h1 id="BoxSzoveg">Fix&Drive Service</h1>
+            </ul>
+            <ul id="Tojashely14">    
+                <h1 id="BoxSzoveg">SF Lottózó</h1>
+            </ul>
+        </ul>
+        <ul id="Videk">
+            <ul id="Tojashely15">    
+                <h1 id="BoxSzoveg">Angel Pine Benzinkút</h1>
+            </ul>
+            <ul id="Tojashely16">    
+                <h1 id="BoxSzoveg">BB műhelyek előtt</h1>
+            </ul>
+        </ul>
+        </ul>-->
+        </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/ba324858a3.js" crossorigin="anonymous"></script>
-<script src="/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
 </html>
